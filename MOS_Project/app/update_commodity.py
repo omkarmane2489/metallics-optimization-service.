@@ -33,8 +33,8 @@ def update_record(data):
         sql_update_query = """Update commodity set name = %s where id = %s"""
         cur.execute(sql_update_query, (name, _id))
         conn.commit()
-        count = cur.rowcount
-        #print(count, "Record Updated successfully ")
+        
+        
 
 
     if 'price' in key_list:
@@ -43,7 +43,7 @@ def update_record(data):
         sql_update_query = """Update commodity set price = %s where id = %s"""
         cur.execute(sql_update_query, (price, _id))
         conn.commit()
-        count = cur.rowcount
+        
 
 
 
@@ -53,8 +53,7 @@ def update_record(data):
         sql_update_query = """Update commodity set inventory = %s where id = %s"""
         cur.execute(sql_update_query, (inventory, _id))
         conn.commit()
-        count = cur.rowcount
-        #print(count, "Record Updated successfully ")
+        
 
 
     conn.close()
