@@ -1,0 +1,73 @@
+[
+	{
+		"id": 1,
+		"name": "Plate1 & Structural1",
+		"price": 1234.50,
+		"inventory": 200.5,
+		"chemical_composition": [{
+				"element": {
+					"id": 13,
+					"name": "Al"
+				},
+				"percentage": 25
+			},
+			{
+				"element": {
+					"id": 26,
+					"name": "Fe"
+				},
+				"percentage": 50
+			},
+			{
+				"element": {
+					"id": 29,
+					"name": "Cu"
+				},
+				"percentage": 10
+			},
+			{
+				"element": {
+					"id": 9999,
+					"name": "Unknown"
+				},
+				"percentage": 15
+			}
+		]
+	},
+
+		{
+		"id": 2,
+		"name": "Plate2 & Structural2",
+		"price": 2345.50,
+		"inventory": 400.5,
+		"chemical_composition": [{
+				"element": {
+					"id": 13,
+					"name": "Al"
+				},
+				"percentage": 25
+			},
+			{
+				"element": {
+					"id": 26,
+					"name": "Fe"
+				},
+				"percentage": 50
+			},
+			{
+				"element": {
+					"id": 29,
+					"name": "Cu"
+				},
+				"percentage": 10
+			},
+			{
+				"element": {
+					"id": 9999,
+					"name": "Unknown"
+				},
+				"percentage": 15
+			}
+		]
+	}
+]
