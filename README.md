@@ -1,1 +1,9 @@
 # metallics-optimization-service.
+
+# Project Description 
+The metallics optimizer calculates the cheapest charge mix for an electric arc furnace (EAF) in a steel plant. The charge materials are different scrap types and virgin material. In summary those materials are called commodities. The optimization algorithm uses the chemical composition of commodities as input values to guarantee that the chemical composition of the tapped melt is within a specific range. The melt is tapped after the melting process in the EAF is finished. One complete melting process as well as tapping the melt into a ladle is called a heat.
+
+# Requirements
+1. Python3.5+
+2. FastAPI
+3. PostgreSQL
