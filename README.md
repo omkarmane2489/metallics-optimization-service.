@@ -13,17 +13,17 @@ Install all the dependencies from '/app/requirements.txt'
 
 # DB initialization
 Following script will create a data base with User authorization
-# cd data
+$ cd data/
 $ sh db.sh
 
 # Insert Data into DB
-# It will create "elements" table & insert sample data into elements table
-# It will also create "commodity" table and insert sample data into it.
-# cd data
-# python3 run.py
+It will create "elements" table & insert sample data into elements table
+It will also create "commodity" table and insert sample data into it.
+$ cd data
+$ python3 run.py
 
 # To run the app server
 Refer below steps:
 
-# cd app/
-# python3 run.py
+$ cd app/
+$ python3 run.py
