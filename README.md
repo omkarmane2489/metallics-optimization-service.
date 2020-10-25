@@ -12,7 +12,7 @@ The metallics optimizer calculates the cheapest charge mix for an electric arc f
 Install all the dependencies from '/app/requirements.txt'
 
 # DB initialization
-Following script will create a data base with User authorization
+Following script will create a data base with User authorization <br />
 $ cd data/ <br />
 $ sh db.sh
 
