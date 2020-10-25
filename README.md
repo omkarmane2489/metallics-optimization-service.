@@ -18,7 +18,7 @@ $ sh db.sh
 
 # Insert Data into DB
 It will create "elements" table & insert sample data into elements table
-It will also create "commodity" table and insert sample data into it.
+It will also create "commodity" table and insert sample data into it. <br />
 $ cd data/  <br />
 $ python3 run.py
 
