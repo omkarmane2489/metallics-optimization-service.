@@ -6,7 +6,7 @@ The metallics optimizer calculates the cheapest charge mix for an electric arc f
 # Requirements
 ● Python 3.5+. </br>
 ● SQL-database: PostgreSQL and pgAdmin for data management. </br>
-● FastAPI, async web framework you like.</br>
+● FastAPI, async web framework.</br>
  
 # Models
 
