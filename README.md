@@ -4,12 +4,10 @@
 The metallics optimizer calculates the cheapest charge mix for an electric arc furnace (EAF) in a steel plant. The charge materials are different scrap types and virgin material. In summary those materials are called commodities. The optimization algorithm uses the chemical composition of commodities as input values to guarantee that the chemical composition of the tapped melt is within a specific range. The melt is tapped after the melting process in the EAF is finished. One complete melting process as well as tapping the melt into a ladle is called a heat.
 
 # Requirements
-● The service should be implemented in Python 3.5+. </br>
-● The data should be stored in an SQL-database. You are free to choose any database management system you like.</br>
-● Please include the database initialization into the project. Use a script or data migration to fill the DB with some initial data.</br>
-● A method call should not block the service (they need to work asynchronously). We use FastAPI, but you may use any async web framework you like.</br>
-● All API methods should require user authorisation. You are free to choose any autorisation schema you want. User registration is not required, just add a user to the database when you initialize it.
-
+● Python 3.5+. </br>
+● SQL-database: PostgreSQL and pgAdmin for data management. </br>
+● FastAPI, async web framework you like.</br>
+ 
 # Models
 
 There are two main models in the service: a chemical element and a commodity. </br>
