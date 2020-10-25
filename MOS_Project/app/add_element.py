@@ -1,14 +1,19 @@
 from app.connect_db import connect_db
 import json
 
+# Function for adding the element in commodity
 def add_data(data):
+
+    # DB Connect
     conn = connect_db()
     cur = conn.cursor()
 
+    # Loads data as a json coming from API
     data = json.loads(data)
     #print(data)
 
     try:
+        # Extract the commodity ID
         _id = data["id"]
         #print(commodity_id)
 
@@ -16,11 +21,13 @@ def add_data(data):
         return {"Error": "Commodity ID is missing"}
 
     try:
+        # Extract element ID
         element_id = data["element_id"]
 
     except:
         return {"Error": "Element ID is missing"}
 
+    # SQL Query to select elements to get element data for requested ID
     sql_select_query = """select id,name from elements where id = %s"""
     cur.execute(sql_select_query, (element_id,))
 
@@ -34,12 +41,13 @@ def add_data(data):
 
 
     try:
+        # Extract percentage value from API request
         percentage = data["percentage"]
 
     except:
         return {"Error": "percentage value is missing"}
 
-
+    # SELECT query for commodity table
     sql_select_query = """select * from commodity where id = %s"""
     cur.execute(sql_select_query, (_id,))
 
@@ -57,7 +65,7 @@ def add_data(data):
 
     chemical_composition = commodity_data["chemical_composition"]
 
-
+    # Data to be added
     json_data = {}
     json_data["element"] = element_data
     json_data["percentage"] = percentage

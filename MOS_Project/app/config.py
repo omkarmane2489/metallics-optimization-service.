@@ -1,4 +1,4 @@
-
+# Configuration file
 DATABASE = 'MOS'
 USER = "omkar_mane"
 PASSWORD = "password"
